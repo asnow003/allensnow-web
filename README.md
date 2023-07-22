@@ -41,7 +41,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### `yarn deploy`
 
-Builds and deploys to GitHub pages
+Builds and deploys the app to github pages. 
+After deploying make sure to go back to github settings and "pages" to update to the correct domain again.
 
 ## Learn More
 
@@ -52,8 +53,13 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Resources
 
 [Components MUI](https://mui.com/)
+
 [Animate and scroll](https://codepen.io/alvarotrigo/pen/PoKamZy),
+
 [React animate](https://www.npmjs.com/package/react-scroll-parallax),
+
 [GitHub pages deploy](https://github.com/gitname/react-gh-pages),
+
 [Components](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/class_components/),
+
 [Router](https://create-react-app.dev/docs/adding-a-router/)

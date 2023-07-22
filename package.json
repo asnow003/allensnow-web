@@ -2,7 +2,7 @@
   "name": "allensnow-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://asnow003.github.io/allensnow-web",
+  "homepage": "https://www.allensnow.com",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
