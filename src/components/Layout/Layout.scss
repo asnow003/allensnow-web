@@ -1,0 +1,36 @@
+.Layout {
+    overflow: scroll;
+    height: 100vh;
+    background: rgba(2, 0, 36, 0);
+}
+.Header {
+    height: 50px;
+    background-color: #fffde8;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+    z-index: 200;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+
+}
+.HeaderTitle {
+    a {
+        text-decoration: none;
+        color: rgb(64, 64, 64);
+        :hover {
+            text-shadow: rgb(161, 161, 161) 2px 2px 2px;
+        }
+    }
+    color: rgb(64, 64, 64);
+    margin-left: 10px;
+    span:nth-child(2) {
+        opacity: 0.3;
+    }
+}
+.Content {
+    padding-top: 90px;
+    padding-bottom: 50px;
+}

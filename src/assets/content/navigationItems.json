@@ -1,0 +1,36 @@
+[
+  {
+    "id": 0,
+    "name": "nav.about",
+    "imageId": "about_home",
+    "path": "/about"
+  },
+  {
+    "id": 0,
+    "name": "nav.resume",
+    "summaryId": "resume.summary",
+    "imageId": "resume_home",
+    "path": "/resume"
+  },
+  {
+    "id": 1,
+    "name": "nav.shuttle",
+    "summaryId": "shuttle.summary",
+    "imageId": "shuttle_home",
+    "path": "/shuttlerun"
+  },
+  {
+    "id": 2,
+    "name": "nav.solitaire",
+    "summaryId": "solitaire.summary",
+    "imageId": "solitaire_home",
+    "path": "/solitaire"
+  },
+  {
+    "id": 3,
+    "name": "nav.klusters",
+    "summaryId": "klusters.summary",
+    "imageId": "klusters_home",
+    "path": "/klusters"
+  }
+]
