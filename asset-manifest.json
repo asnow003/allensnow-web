@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/allensnow-web/static/css/main.7b0e5875.css",
+    "main.js": "/allensnow-web/static/js/main.353ca343.js",
+    "static/js/787.9851e1bb.chunk.js": "/allensnow-web/static/js/787.9851e1bb.chunk.js",
+    "static/media/klusters2.png": "/allensnow-web/static/media/klusters2.aeff8eb7d01acd23227e.png",
+    "static/media/klusters.png": "/allensnow-web/static/media/klusters.78b56326c493479d7e10.png",
+    "static/media/klusters1.png": "/allensnow-web/static/media/klusters1.7c63ebffa7b3d4d873e7.png",
+    "static/media/shuttle_design3.png": "/allensnow-web/static/media/shuttle_design3.6b620c825889c6c8452b.png",
+    "static/media/shuttle_game.png": "/allensnow-web/static/media/shuttle_game.6d30a696dd09a65ff211.png",
+    "static/media/shuttle_wire.png": "/allensnow-web/static/media/shuttle_wire.b293e0b2d5b414bcc019.png",
+    "static/media/home_about.png": "/allensnow-web/static/media/home_about.78b43a6dd97636cd9357.png",
+    "static/media/shuttle_design2.png": "/allensnow-web/static/media/shuttle_design2.74ef7ba097a6923c639b.png",
+    "static/media/solitaire_preview.png": "/allensnow-web/static/media/solitaire_preview.955b39f641888d21e5fb.png",
+    "static/media/home_shuttle.png": "/allensnow-web/static/media/home_shuttle.2fa4f18f35967565e9b4.png",
+    "static/media/shuttle_render2.png": "/allensnow-web/static/media/shuttle_render2.2fa4f18f35967565e9b4.png",
+    "static/media/shuttle_design1.png": "/allensnow-web/static/media/shuttle_design1.272633f36abc6b496a07.png",
+    "static/media/avatar.png": "/allensnow-web/static/media/avatar.948e20a6ab938ff95581.png",
+    "static/media/shuttle_render1.png": "/allensnow-web/static/media/shuttle_render1.03b127c0f7f7854ddf83.png",
+    "static/media/shuttle.png": "/allensnow-web/static/media/shuttle.53498310b4ccf015d5c8.png",
+    "static/media/home_resume.png": "/allensnow-web/static/media/home_resume.5b0472baa861e5d46762.png",
+    "static/media/home_solitaire.png": "/allensnow-web/static/media/home_solitaire.f0d500c4740ba6e9d94d.png",
+    "static/media/home_klusters.png": "/allensnow-web/static/media/home_klusters.6d13b399ee642dc11a18.png",
+    "index.html": "/allensnow-web/index.html",
+    "main.7b0e5875.css.map": "/allensnow-web/static/css/main.7b0e5875.css.map",
+    "main.353ca343.js.map": "/allensnow-web/static/js/main.353ca343.js.map",
+    "787.9851e1bb.chunk.js.map": "/allensnow-web/static/js/787.9851e1bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b0e5875.css",
+    "static/js/main.353ca343.js"
+  ]
+}
