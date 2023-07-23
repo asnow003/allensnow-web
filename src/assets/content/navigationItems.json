@@ -2,34 +2,42 @@
   {
     "id": 0,
     "name": "nav.about",
+    "summary": ["about.summary"],
     "imageId": "about_home",
     "path": "/about"
   },
   {
-    "id": 0,
+    "id": 1,
     "name": "nav.resume",
-    "summaryId": "resume.summary",
+    "summary": ["resume.summary"],
     "imageId": "resume_home",
     "path": "/resume"
   },
   {
-    "id": 1,
+    "id": 2,
     "name": "nav.shuttle",
-    "summaryId": "shuttle.summary",
+    "summary": ["shuttle.summary"],
     "imageId": "shuttle_home",
     "path": "/shuttlerun"
   },
   {
-    "id": 2,
+    "id": 3,
+    "name": "nav.unreal",
+    "summary": ["unreal.summary"],
+    "imageId": "unreal_home",
+    "path": "/unreal"
+  },
+  {
+    "id": 4,
     "name": "nav.solitaire",
-    "summaryId": "solitaire.summary",
+    "summary": ["solitaire.summary"],
     "imageId": "solitaire_home",
     "path": "/solitaire"
   },
   {
-    "id": 3,
+    "id": 5,
     "name": "nav.klusters",
-    "summaryId": "klusters.summary",
+    "summary": ["klusters.summary"],
     "imageId": "klusters_home",
     "path": "/klusters"
   }

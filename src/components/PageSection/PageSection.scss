@@ -7,12 +7,36 @@
         text-align: left;
     }
     .Buttons {
+        margin-top: 10px;
         margin-bottom: 30px;
+        .Button {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            padding: 5px 10px;
+            border: 1px solid rgb(91, 91, 91);
+            border-radius: 5px;
+            box-shadow: 0 0 10px 0 rgba(63, 63, 63, 0.2);
+            text-decoration: none;
+
+            &:hover {
+                background-color: rgb(255, 254, 238);
+            }
+        }
     }
     .Images {
         margin-top: 10px;
+
+        img {
+            border-radius: 20px;
+            box-shadow: 0 0 10px 0 rgba(63, 63, 63, 0.7);
+        }
     }
     .Video {
         margin-top: 10px;
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+        }
     }
 }

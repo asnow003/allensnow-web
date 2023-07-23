@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { FormattedMessage } from "react-intl";
-import Typography from "@mui/material/Typography";
 import "./ImageList.scss";
 import Grid from "@mui/material/Grid";
 import { ImageMap } from "../../assets/images/ImageMap";

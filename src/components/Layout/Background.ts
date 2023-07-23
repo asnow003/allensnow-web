@@ -31,7 +31,8 @@ export class Background implements IBackground  {
         this.canvas.height = document.documentElement.clientHeight;
         this.draw();
 
-        console.log(this.canvas.width, this.canvas.height);
+        // Debug for screen size
+        // console.log(this.canvas.width, this.canvas.height);
       });
     }
 
@@ -79,7 +80,7 @@ export class Background implements IBackground  {
       const calcX = (i * (1.5 * r)) - r;
       for (let j = 0; j < rows; j++) {
         const calcY = (j * hexagonHeight) + (i % 2 === 0 ? 0 : (0.5 * hexagonHeight)) - (hexagonHeight / 2);
-        const color = '#fffde8' // '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6);
+        const color = '#fffef8' // '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6);
         
         const tile = this.drawHexagon(calcX, calcY, color);
         if (tile) {

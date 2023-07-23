@@ -2,33 +2,30 @@
     .NavItem {
         height: 100%;
         margin: 0 10px;
-        padding: 10px;
+        padding: 0px;
         border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.898);
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
         transition: all 0.3s ease-in-out;
 
         .Card {
             height: 100%;
-            background-color: rgba(255, 255, 224, 0.701);
+            background-color: rgba(242, 242, 242, 0.701);
 
             &:hover {
-                background-color: rgba(255, 255, 224, 0.801);
+                background-color: rgb(255, 254, 238);
             }
         }
 
+        box-shadow: 0 0 10px 0 rgba(63, 63, 63, 0.7);
 
         &:hover {
-            background-color: rgba(227, 227, 227, 0.8);
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+            background-color: rgb(227, 227, 227);
         }
     }
 
     a {
         text-decoration: none;
-        text-shadow: rgb(161, 161, 161) 2px 2px 2px;  
-        &:hover {
-            text-shadow: rgba(228, 228, 228, 0.513) 2px 2px 2px;
-        }
+        text-shadow: rgba(121, 121, 121, 0.652) 3px 3px 5px;
     }
 }

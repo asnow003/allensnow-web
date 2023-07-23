@@ -1,7 +1,7 @@
 import React from "react";
 import Page from "../Page/Page";
 
-class About extends Page {
+class Unreal extends Page {
   renderPageContent(): JSX.Element {
     return (
       <div>
@@ -11,4 +11,4 @@ class About extends Page {
   }
 }
 
-export default About;
+export default Unreal;

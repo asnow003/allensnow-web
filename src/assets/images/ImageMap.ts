@@ -6,6 +6,7 @@ import shuttle from "../../assets/images/home/home_shuttle.png";
 import solitaire from "../../assets/images/home/home_solitaire.png";
 import klusters from "../../assets/images/home/home_klusters.png";
 import about from "../../assets/images/home/home_about.png";
+import unreal from "../../assets/images/unreal/unreal.png";
 
 // shuttle page images
 import shuttle_design1 from "../../assets/images/shuttle/shuttle_design1.png";
@@ -19,6 +20,8 @@ import solitaire_preview from "../../assets/images/solitaire/solitaire_preview.p
 import klusters_preview from "../../assets/images/klusters/klusters.png";
 import klusters_preview1 from "../../assets/images/klusters/klusters1.png";
 import klusters_preview2 from "../../assets/images/klusters/klusters2.png";
+
+// unreal images
 
 export const ImageMap: { [id: string] : any; } = {
     "avatar": avatar,
@@ -39,4 +42,5 @@ export const ImageMap: { [id: string] : any; } = {
     "klusters_preview2": klusters_preview2,
     "about_home": about,
     "shuttle": shuttle,
+    "unreal_home": unreal,
   }

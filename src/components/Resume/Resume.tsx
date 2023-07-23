@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Resume.scss";
 import Page from "../Page/Page";
 import PageSection from "../PageSection/PageSection";
@@ -9,7 +9,7 @@ class Resume extends Page {
       <div className="Solitaire">
         <PageSection
           titleId="resume.link.title"
-          summaryId="resume.link.summary"
+          summary={["resume.link.summary"]}
           buttons={[{ titleId: "resume.download.button", url: "https://www.allensnow.com/media/resume.pdf"}]}
         />
       </div>

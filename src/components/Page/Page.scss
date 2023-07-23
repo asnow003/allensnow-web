@@ -1,9 +1,25 @@
 .Page {
     .PageHeader {
-        margin-bottom: 25px;
+        margin-bottom: 10px;
+    }
+
+    .Button {
+        text-align: left;
+        margin-left: 10px;
+        a {
+            color: rgb(56, 56, 56);
+            text-decoration: none;
+            span {
+                margin-left: 5px;
+            }
+            &:hover {
+                color: rgb(125, 125, 125);
+            }
+        }
     }
 
     .PageContent {
+        margin-top: 25px;
         text-align: left;
         margin-left: 10px;
         margin-right: 10px;

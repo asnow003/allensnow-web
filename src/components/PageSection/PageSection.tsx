@@ -6,7 +6,6 @@ import { ImageMap } from "../../assets/images/ImageMap";
 import ImageList from "../ImageList/ImageList";
 import Grow from "@mui/material/Grow";
 import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
 
 import IPageSectionProps from "../../interfaces/IPageSectionProps";
 
@@ -27,7 +26,7 @@ class PageSection extends Component<IPageSectionProps> {
         </div>
         <div className="Summary">
           <Typography variant="body1" component="p" gutterBottom>
-            <FormattedMessage id={this.props.summaryId} />
+            <FormattedMessage id={this.props.summary[0]} />
           </Typography>
         </div>
         {this.props.buttons && this.props.buttons.length > 0 && (
@@ -35,14 +34,9 @@ class PageSection extends Component<IPageSectionProps> {
             <Stack direction="row" spacing={1}>
               {Array.from(this.props.buttons).map((item, index) => (
                 <Grow in={true} timeout={1000 + index * 300}>
-                  <Button
-                    href={item.url}
-                    target="_blank"
-                    variant="contained"
-                    size="large"
-                  >
+                  <a className="Button" tabIndex={index} href={item.url} target="_blank">
                     <FormattedMessage id={item.titleId} />
-                  </Button>
+                  </a>
                 </Grow>
               ))}
             </Stack>
@@ -63,8 +57,7 @@ class PageSection extends Component<IPageSectionProps> {
         {this.props.videoURL && (
           <div className="Video">
             <iframe
-              height="560"
-              width="100%"
+              title="YouTube video player"
               src={this.props.videoURL}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>

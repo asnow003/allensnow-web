@@ -20,7 +20,7 @@ class PageTitle extends Component<IPageTitleProps> {
         </Stack>
         <Typography variant="subtitle1" align="left" component="p">
           <FormattedMessage
-            id={this.props.item.summaryId}
+            id={this.props.item.summary[0]}
             defaultMessage="Shuttle Run default"
           />
         </Typography>

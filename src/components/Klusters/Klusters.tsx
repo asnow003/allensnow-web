@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Klusters.scss";
 import Page from "../Page/Page";
 import PageSection from "../PageSection/PageSection";
@@ -8,7 +8,7 @@ class Klusters extends Page {
       <div className="Solitaire">
         <PageSection
           titleId="klusters.about.title"
-          summaryId="klusters.about.summary"
+          summary={["klusters.about.summary"]}
           buttons={[{ titleId: "klusters.app.button", url: "https://itunes.apple.com/us/app/klusters/id1244555430?mt=8"}]}
           images={[
             "klusters_preview",

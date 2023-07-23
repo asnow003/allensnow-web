@@ -2,12 +2,15 @@ import React, { Component } from "react";
 import "./Page.scss";
 import IPage from "../../interfaces/IPage";
 import INavigationItem from "../../interfaces/INavigationItem";
+import { FormattedMessage } from "react-intl";
 import * as navigation from "../../assets/content/navigationItems.json";
 import PageTitle from "../PageTitle/PageTitle";
+import HomeIcon from '@mui/icons-material/Home';
+import Stack from "@mui/material/Stack";
 
 abstract class Page extends Component<IPage> {
   static defaultProps: {
-    showHeader: true;  
+    showHeader: true;
   };
 
   getNavigationItem(): INavigationItem {
@@ -33,17 +36,31 @@ abstract class Page extends Component<IPage> {
   render() {
     return (
       <div className="Page">
-        {this.props.showHeader && <div className="PageHeader"><PageTitle item={this.getNavigationItem()} /></div>}
-        <div className="PageContent">
-          {this.renderPageContent()}
-        </div>   
+        {this.props.showHeader && (
+          <>
+            <div className="PageHeader">
+              <PageTitle item={this.getNavigationItem()} />
+            </div>
+            <div className="Button">
+              <a href="/">
+                <Stack direction="row" spacing={2}>
+                  <HomeIcon />
+                  <span>
+                    <FormattedMessage id={"page.home.button"} />
+                  </span>
+                </Stack>
+              </a>
+            </div>
+          </>
+        )}
+        <div className="PageContent">{this.renderPageContent()}</div>
       </div>
     );
   }
 }
 
 Page.defaultProps = {
-    showHeader: true
-}
+  showHeader: true,
+};
 
 export default Page;

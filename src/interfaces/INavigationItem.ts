@@ -1,7 +1,7 @@
 export default interface INavigationItem {
     id: number;
     name: string;
-    summaryId: string;
+    summary: string[];
     imageId: string;
     path: string;
 }
