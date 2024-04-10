@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.eb3537f4.css",
-    "main.js": "/static/js/main.638c3acc.js",
+    "main.css": "/static/css/main.70f461b6.css",
+    "main.js": "/static/js/main.1086312a.js",
     "static/js/787.9851e1bb.chunk.js": "/static/js/787.9851e1bb.chunk.js",
+    "static/media/home_about.png": "/static/media/home_about.c3ee4351c6afdc8979b2.png",
     "static/media/klusters2.png": "/static/media/klusters2.aeff8eb7d01acd23227e.png",
     "static/media/klusters.png": "/static/media/klusters.78b56326c493479d7e10.png",
     "static/media/klusters1.png": "/static/media/klusters1.7c63ebffa7b3d4d873e7.png",
     "static/media/shuttle_design3.png": "/static/media/shuttle_design3.6b620c825889c6c8452b.png",
     "static/media/shuttle_wire.png": "/static/media/shuttle_wire.cffd8defce73f4f1dab6.png",
     "static/media/shuttle_game.png": "/static/media/shuttle_game.6d30a696dd09a65ff211.png",
-    "static/media/home_about.png": "/static/media/home_about.78b43a6dd97636cd9357.png",
     "static/media/shuttle_design2.png": "/static/media/shuttle_design2.74ef7ba097a6923c639b.png",
     "static/media/solitaire_preview.png": "/static/media/solitaire_preview.955b39f641888d21e5fb.png",
     "static/media/home_shuttle.png": "/static/media/home_shuttle.2fa4f18f35967565e9b4.png",
@@ -23,12 +23,12 @@
     "static/media/home_solitaire.png": "/static/media/home_solitaire.f0d500c4740ba6e9d94d.png",
     "static/media/home_klusters.png": "/static/media/home_klusters.6d13b399ee642dc11a18.png",
     "index.html": "/index.html",
-    "main.eb3537f4.css.map": "/static/css/main.eb3537f4.css.map",
-    "main.638c3acc.js.map": "/static/js/main.638c3acc.js.map",
+    "main.70f461b6.css.map": "/static/css/main.70f461b6.css.map",
+    "main.1086312a.js.map": "/static/js/main.1086312a.js.map",
     "787.9851e1bb.chunk.js.map": "/static/js/787.9851e1bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb3537f4.css",
-    "static/js/main.638c3acc.js"
+    "static/css/main.70f461b6.css",
+    "static/js/main.1086312a.js"
   ]
 }
