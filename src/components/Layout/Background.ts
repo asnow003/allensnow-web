@@ -65,7 +65,7 @@ export class Background implements IBackground  {
     }
   }
 
-  drawHexagonGrid(width: number, height: number) {
+  async drawHexagonGrid(width: number, height: number) {
     if (!this.ctx) return;
     
     this.ctx.save();
