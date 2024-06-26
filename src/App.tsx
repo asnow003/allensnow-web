@@ -1,7 +1,16 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
-import { Layout, Home, About, ShuttleRun, Solitaire, Klusters, Resume, Unreal } from "./components";
+import {
+  Layout,
+  Home,
+  About,
+  ShuttleRun,
+  Solitaire,
+  Klusters,
+  Resume,
+  Unreal,
+} from "./components";
 
 function App() {
   return (

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Background } from "./Background";
 import Container from "@mui/material/Container";
 import { Outlet } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 import "./Layout.scss";
 
 import IconButton from "@mui/material/IconButton";
@@ -85,10 +86,7 @@ const Layout = () => {
           </ListItemButton>
         </ListItem>
         <ListItem key={2} disablePadding>
-          <ListItemButton
-            href={instagramURL}
-            target="_blank"
-          >
+          <ListItemButton href={instagramURL} target="_blank">
             <ListItemIcon>
               <InstagramIcon />
             </ListItemIcon>
@@ -98,6 +96,9 @@ const Layout = () => {
       </List>
     </Box>
   );
+
+  const { isLoading, isAuthenticated, error, user, loginWithRedirect, logout } =
+    useAuth0();
 
   return (
     <Container>
@@ -148,18 +149,26 @@ const Layout = () => {
               <IconButton href={githubURL} target="_blank">
                 <GitHubIcon />
               </IconButton>
-              <IconButton
-                href={linkedInURL}
-                target="_blank"
-              >
+              <IconButton href={linkedInURL} target="_blank">
                 <LinkedInIcon />
               </IconButton>
-              <IconButton
-                href={instagramURL}
-                target="_blank"
-              >
+              <IconButton href={instagramURL} target="_blank">
                 <InstagramIcon />
               </IconButton>
+
+              {isAuthenticated ? (
+                <button
+                  onClick={() =>
+                    logout({
+                      logoutParams: { returnTo: window.location.origin },
+                    })
+                  }
+                >
+                  {user?.name} - Log out
+                </button>
+              ) : (
+                <button onClick={() => loginWithRedirect()}>Log in</button>
+              )}
             </Box>
             <Box
               alignItems={"right"}

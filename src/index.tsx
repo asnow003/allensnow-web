@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { HashRouter } from "react-router-dom";
 import "./index.scss";
 import App from "./App";
+import { Auth0Provider } from "@auth0/auth0-react";
 import reportWebVitals from "./reportWebVitals";
 import { initializeApp } from "firebase/app";
 import { getAnalytics, logEvent } from "firebase/analytics";
@@ -36,13 +37,21 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <IntlProvider locale={locale} messages={English}>
-    <React.StrictMode>
-      <HashRouter>
-        <App />
-      </HashRouter>
-    </React.StrictMode>
-  </IntlProvider>
+  <Auth0Provider
+    domain="dev-vxmc3opynksl5ajh.us.auth0.com"
+    clientId="aF0R6mM4MpgC7eORu0apPccOkOExPtpd"
+    authorizationParams={{
+      redirect_uri: window.location.origin,
+    }}
+  >
+    <IntlProvider locale={locale} messages={English}>
+      <React.StrictMode>
+        <HashRouter>
+          <App />
+        </HashRouter>
+      </React.StrictMode>
+    </IntlProvider>
+  </Auth0Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

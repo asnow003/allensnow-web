@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://www.allensnow.com",
   "dependencies": {
+    "@auth0/auth0-react": "^2.2.4",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/icons-material": "^5.11.16",
