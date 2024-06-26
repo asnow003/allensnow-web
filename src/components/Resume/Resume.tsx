@@ -2,6 +2,7 @@ import React from "react";
 import "./Resume.scss";
 import Page from "../Page/Page";
 import PageSection from "../PageSection/PageSection";
+import { withAuthenticationRequired } from "@auth0/auth0-react";
 
 class Resume extends Page {
   renderPageContent(): JSX.Element {
@@ -17,4 +18,4 @@ class Resume extends Page {
   }
 }
 
-export default Resume;
+export default withAuthenticationRequired(Resume);

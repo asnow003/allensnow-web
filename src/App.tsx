@@ -23,7 +23,7 @@ function App() {
           <Route path="klusters" element={<Klusters />} />
           <Route path="resume" element={<Resume />} />
           <Route path="unreal" element={<Unreal />} />
-          <Route path="about" element={<About />} />
+          <Route path="about" element={<About/>} />
           <Route path="*" element={<Home showHeader={false} />} />
         </Route>
       </Routes>

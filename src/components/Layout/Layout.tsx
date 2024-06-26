@@ -10,6 +10,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { Login, Logout } from "@mui/icons-material";
 import INavigationItem from "../../interfaces/INavigationItem";
 import * as navigation from "../../assets/content/navigationItems.json";
 
@@ -41,6 +42,8 @@ const Layout = () => {
   const drawerWidth = 240;
 
   const background = new Background(navItems);
+  const { isLoading, isAuthenticated, error, user, loginWithRedirect, logout } =
+    useAuth0();
 
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -93,12 +96,25 @@ const Layout = () => {
             <ListItemText primary={"Instagram"} />
           </ListItemButton>
         </ListItem>
+        <ListItem key={3} disablePadding>
+          <ListItemButton
+            onClick={() =>
+              isAuthenticated
+                ? logout({
+                    logoutParams: { returnTo: window.location.origin },
+                  })
+                : loginWithRedirect()
+            }
+          >
+            <ListItemIcon>
+              <Login />
+            </ListItemIcon>
+            <ListItemText primary={isAuthenticated ? "logout" : "login"} />
+          </ListItemButton>
+        </ListItem>
       </List>
     </Box>
   );
-
-  const { isLoading, isAuthenticated, error, user, loginWithRedirect, logout } =
-    useAuth0();
 
   return (
     <Container>
