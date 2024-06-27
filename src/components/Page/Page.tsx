@@ -19,8 +19,9 @@ abstract class Page extends Component<IPage> {
     ) as Array<INavigationItem>;
 
     for (let i = 0; i < navItems.length; i++) {
-      if (navItems[i].path === window.location.pathname) {
-        return navItems[i];
+      const item = navItems[i];
+      if (window.location.hash.indexOf(item.path) >= 0) {
+        return item;
       }
     }
 

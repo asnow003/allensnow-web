@@ -4,41 +4,41 @@
     "name": "nav.about",
     "summary": ["about.summary"],
     "imageId": "about_home",
-    "path": "/about"
+    "path": "about"
   },
   {
     "id": 1,
     "name": "nav.resume",
     "summary": ["resume.summary"],
     "imageId": "resume_home",
-    "path": "/resume"
+    "path": "resume"
   },
   {
     "id": 2,
     "name": "nav.shuttle",
     "summary": ["shuttle.summary"],
     "imageId": "shuttle_home",
-    "path": "/shuttlerun"
+    "path": "shuttlerun"
   },
   {
     "id": 3,
     "name": "nav.unreal",
     "summary": ["unreal.summary"],
     "imageId": "unreal_home",
-    "path": "/unreal"
+    "path": "unreal"
   },
   {
     "id": 4,
     "name": "nav.solitaire",
     "summary": ["solitaire.summary"],
     "imageId": "solitaire_home",
-    "path": "/solitaire"
+    "path": "solitaire"
   },
   {
     "id": 5,
     "name": "nav.klusters",
     "summary": ["klusters.summary"],
     "imageId": "klusters_home",
-    "path": "/klusters"
+    "path": "klusters"
   }
 ]

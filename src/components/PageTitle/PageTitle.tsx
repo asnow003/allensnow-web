@@ -14,14 +14,14 @@ class PageTitle extends Component<IPageTitleProps> {
           <Typography variant="h5" align="left" component="h1">
             <FormattedMessage
               id={this.props.item.name}
-              defaultMessage="Shuttle Run default"
+              defaultMessage="Title"
             />
           </Typography>
         </Stack>
         <Typography variant="subtitle1" align="left" component="p">
           <FormattedMessage
             id={this.props.item.summary[0]}
-            defaultMessage="Shuttle Run default"
+            defaultMessage="Summary"
           />
         </Typography>
       </div>
