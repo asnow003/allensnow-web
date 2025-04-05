@@ -7,6 +7,7 @@ import solitaire from "../../assets/images/home/home_solitaire.png";
 import klusters from "../../assets/images/home/home_klusters.png";
 import about from "../../assets/images/home/home_about.png";
 import unreal from "../../assets/images/unreal/unreal.png";
+import wagglebum from "../../assets/images/home/home_wagglebum.png";
 
 // shuttle page images
 import shuttle_design1 from "../../assets/images/shuttle/shuttle_design1.png";
@@ -43,4 +44,5 @@ export const ImageMap: { [id: string] : any; } = {
     "about_home": about,
     "shuttle": shuttle,
     "unreal_home": unreal,
+    "wagglebum_home": wagglebum,
   }
