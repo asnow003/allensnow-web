@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Background } from "./Background";
 import Container from "@mui/material/Container";
 import { Outlet } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
 import "./Layout.scss";
 
 import IconButton from "@mui/material/IconButton";
@@ -42,8 +41,6 @@ const Layout = () => {
   const drawerWidth = 240;
 
   const background = new Background(navItems);
-  const { isLoading, isAuthenticated, error, user, loginWithRedirect, logout } =
-    useAuth0();
 
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -94,22 +91,6 @@ const Layout = () => {
               <InstagramIcon />
             </ListItemIcon>
             <ListItemText primary={"Instagram"} />
-          </ListItemButton>
-        </ListItem>
-        <ListItem key={3} disablePadding>
-          <ListItemButton
-            onClick={() =>
-              isAuthenticated
-                ? logout({
-                    logoutParams: { returnTo: window.location.origin },
-                  })
-                : loginWithRedirect()
-            }
-          >
-            <ListItemIcon>
-              <Login />
-            </ListItemIcon>
-            <ListItemText primary={isAuthenticated ? "logout" : "login"} />
           </ListItemButton>
         </ListItem>
       </List>
@@ -171,20 +152,6 @@ const Layout = () => {
               <IconButton href={instagramURL} target="_blank">
                 <InstagramIcon />
               </IconButton>
-
-              {isAuthenticated ? (
-                <button
-                  onClick={() =>
-                    logout({
-                      logoutParams: { returnTo: window.location.origin },
-                    })
-                  }
-                >
-                  {user?.name} - Log out
-                </button>
-              ) : (
-                <button onClick={() => loginWithRedirect()}>Log in</button>
-              )}
             </Box>
             <Box
               alignItems={"right"}
